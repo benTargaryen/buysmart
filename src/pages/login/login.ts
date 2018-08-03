@@ -52,12 +52,12 @@ export class LoginPage {
 		this.auth.signInWithEmail(credentials)
 			.then(
 				() => this.nav.setRoot(HomePage),
-				error => this.message = "User not found please try again"
+				error => this.message = "User not found, please try again"
       );
       
       this.presentToast(this.message);
 	}
-  
+
   // go to forgot password page
   forgotPwd() {
     this.nav.push(ForgotPasswordPage);
